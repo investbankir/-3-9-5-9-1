@@ -35,7 +35,7 @@ class DebitAccount extends BankAccount /* унаследуйте класс от
             // вычесть amount из amount класса
           System.out.println("Вы сняли "+ amount+ " " + currency);// вывести сообщение "Вы сняли {amount} {currency}"
       } else {
-          System.out.println("У вас недостаточно средств для снятия суммы "+amount+" "+"currency");// иначе вывести сообщение "У вас недостаточно средств для снятия суммы {amount} {currency}"
+          System.out.println("У вас недостаточно средств для снятия суммы "+amount+" "+currency);// иначе вывести сообщение "У вас недостаточно средств для снятия суммы {amount} {currency}"
       }                     
     }
 
