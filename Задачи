@@ -1,0 +1,81 @@
+abstract class Item {
+    protected String name;// ваш код здесь
+  
+    Item(String name) {
+      this.name = name;
+  }
+    
+    @Override
+    public String toString() {
+        return name;
+    }
+    
+    abstract float getWeight();
+    
+    abstract float getSize(); 
+    
+}
+
+class Bottle extends Item {
+  Bottle(final String name, float value);  // ваш код здесь
+    super(name);
+    this.value = value;
+  
+    
+@Override
+float getWeight() {
+    return value;
+}
+@Override
+float getSize() {
+    return value;
+}
+}
+
+class Clothes extends Item {
+    private final float weight;
+private final float size;
+
+Clothes(final String name, float weight, float size) {
+    super(name);
+    this.weight = weight;
+    this.size = size;
+}
+
+@Override
+float getWeight() {
+    return weight;
+}
+
+@Override
+float getSize() {
+    return size;
+}// ваш код здесь
+}
+
+class Electronic extends Item {
+   private final float size; // ваш код здесь
+   
+    Electronic(final String name, float size) {
+super(name);
+this.size = size;
+}
+    float getWeight() {
+    return size/2;
+    }
+    float getSize() {
+    return size;
+}
+}
+
+class SmallThings extends Item {
+ SmallThings(final String name) {
+super(name);
+ }
+float getWeight() {
+    return 0;
+    }
+    float getSize() {
+    return 0.5;
+}
+} // ваш код здесь
